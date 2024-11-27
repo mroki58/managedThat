@@ -16,31 +16,15 @@ void File::init(std::string path)
 
 void File::appendLineTxt(std::string text)
 {
-    // simulate work for now
-    std::cout << "Appended to file: " << _name << std::endl;
+
 }
 
 void File::append(const File & file)
 {
-    //simulate work for now
-    std::cout << "Work in progress..." << std::endl; 
+
 }
 
 void File::deleteFile()
 {
-    if (std::filesystem::exists(_name))
-    {
-        if (std::remove(_name.c_str()) == 0)
-        {
-            std::cout << "Plik został usunięty.\n";
-        }
-        else
-        {
-            std::cerr << "Nie udało się usunąć pliku.\n";
-        }
-    }
-    else
-    {
-        std::cerr << "Plik nie istnieje.\n";
-    }
+
 }
