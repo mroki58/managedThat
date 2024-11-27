@@ -1,11 +1,13 @@
 #pragma once
-#include <vector>
+#include "Object.h"
 
-class File{
+class File: public Object{
 public:
+    File(std::string name): Object(name) {}
     void add();
     void appendLineTxt(std::string text);
     void append(const File & file);
+    void remove();
 
 private:
     std::string name;
