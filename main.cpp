@@ -12,6 +12,7 @@ int main()
     File b2("nazwa_pliku2.txt");
     b2.init("/home/igorsala/Pulpit/FolderTestowy");
     b1.appendLineTxt("Tekst do pliku b2");
+    b1.appendLineTxt("Tekst do pliku b2 wiecej");
     b1.append(b2);
     b2.deleteFile();
     
