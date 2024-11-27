@@ -1,8 +1,8 @@
 #include "File.h"
 
-void File::init(std::string name)
+void File::init(std::string path)
 {
-
+    this->Object::init(path);
 }
 
 void File::appendLineTxt(std::string text)
