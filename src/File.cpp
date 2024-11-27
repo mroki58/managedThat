@@ -16,7 +16,7 @@ void File::init(std::string path)
 
 void File::appendLineTxt(std::string text)
 {
-
+    
 }
 
 void File::append(const File & file)
