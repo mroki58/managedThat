@@ -9,7 +9,7 @@ Firstly look in history where functions were implemented and try to merge change
 
 ### How should program work in its final version?
 
-Firstly change in main.cpp path to catalog created on your desktop and than in that file new catalog will be created with new txt file whose contents are "Tekst do pliku b1\nTekst do pliku b2" You can use rerere for not resolving conflict again later.
+Firstly change in main.cpp path to catalog created on your desktop and than in that file new catalog will be created with new txt file whose contents are "Tekst do pliku b1\nTekst do pliku b2" You can use rerere for not resolving conflict again later. https://git-scm.com/book/be/v2/Git-Tools-Rerere
 
 ### We assume that this task may take you at least 2 hours
 
