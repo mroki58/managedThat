@@ -4,7 +4,7 @@ namespace fs = std::filesystem;
 
 void Directory::init(std::string path)
 {
-    this->Object::init(path);
+    this->Object::init(path);          
 }
 
 void Directory::add(Object & object)

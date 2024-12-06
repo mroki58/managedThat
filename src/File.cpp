@@ -12,6 +12,8 @@ void File::appendLineTxt(std::string text)
     std::ofstream file(_name, std::ios::app);
     file << text << "\n";
     file.close();
+    // simulate work for now
+    std::cout << "Appended to file: " << _name << std::endl;
 }
 
 void File::append(const File & file)
@@ -26,9 +28,25 @@ void File::append(const File & file)
         out << "\n" + token;
     }
     in.close();
+    //simulate work for now
+    std::cout << "Work in progress..." << std::endl; 
 }
 
 void File::deleteFile()
 {
-
+    if (std::filesystem::exists(_name))
+    {
+        if (std::remove(_name.c_str()) == 0)
+        {
+            std::cout << "Plik został usunięty.\n";
+        }
+        else
+        {
+            std::cerr << "Nie udało się usunąć pliku.\n";
+        }
+    }
+    else
+    {
+        std::cerr << "Plik nie istnieje.\n";
+    }
 }
