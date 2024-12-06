@@ -2,14 +2,16 @@
 #include <fstream>
 #include <iostream>
 
-void File::init(std::string name)
+void File::init(std::string path)
 {
-    _name = name;
+    this->Object::init(path);
 }
 
 void File::appendLineTxt(std::string text)
 {
-
+    std::ofstream file(_name, std::ios::app);
+    file << text << "\n";
+    file.close();
 }
 
 void File::append(const File & file)

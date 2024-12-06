@@ -2,7 +2,7 @@
 
 void Directory::init(std::string path)
 {
-    _name = path;
+    this->Object::init(path);
 }
 
 void Directory::add(Object & object)
