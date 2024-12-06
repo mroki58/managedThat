@@ -1,5 +1,6 @@
 #pragma once
 #include "Object.h"
+#include <fstream>
 
 class File: public Object{
 public:
